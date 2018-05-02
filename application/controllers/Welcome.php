@@ -46,5 +46,9 @@ class Welcome extends CI_Controller {
       {
       $this->load->view("login");
       }
+       public function registration_page()
+      {
+      $this->load->view("registration_page");
+      }
             
 }
