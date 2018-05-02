@@ -19,7 +19,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
             }
             .logo{
-                background:#0069d9;
+                margin-top:20px;
             }
             .col form{
                 margin-top: 30px;
@@ -38,13 +38,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <img class="logo" src="<?php echo base_url()?>static/img/bookmark_library.jpg" alt="logo"/>
+                    <img class="logo" src="<?php echo base_url()?>static/img/bookmark_library1.jpg" alt="logo"/>
                 </div>
                 <div class="col">
                     <h1>BOOKMARK LIBRARY</h1>
                 </div>
                 <div class="col">
                     <a href="<?php echo base_url()?>application/views/login.php"><button>Login</button></a>
+                    <a href="<?php echo base_url()?>application/views/login.php"><button>SignUp</button></a>
                 </div>
             </div>
             <div class="row">

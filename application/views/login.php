@@ -35,8 +35,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <body>
         <div class="container bg">
             <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-12"></div>
-                <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="col-md-3 col-sm-2 col-xs-12"></div>
+                <div class="col-md-6 col-sm-8 col-xs-12">
                     <form id="log" action="login_submit.php" method="POST">
                         <h1>Login Form</h1>
                         <img src="<?php echo base_url()?>static/img/caller.png"/>
@@ -53,7 +53,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <button class="btn btn-success form-control" type="submit">Login</button>
                     </form>
                 </div>
-                <div class="col-md-4 col-sm-4 col-xs-12"></div>
+                <div class="col-md-3 col-sm-2 col-xs-12"></div>
             </div>
         </div>
     </body>
