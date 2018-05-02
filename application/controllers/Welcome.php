@@ -31,15 +31,20 @@ class Welcome extends CI_Controller {
         $data['y'] = $b;
         $this->load->view('abc', $data);
     }*/
-    public function abc(){
+    /*public function abc(){
             $this->load->model('test_model');
             $r = $this->test_model->get_data_from_table();
             print_r($r);
                    
-        }
+        }*/
 
-    /* public function bookmarks()
+     public function bookmarks()
       {
       $this->load->view("bookmarks");
-      } */
+      }
+      public function login()
+      {
+      $this->load->view("login");
+      }
+            
 }
