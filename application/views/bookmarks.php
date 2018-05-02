@@ -44,19 +44,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <h1>BOOKMARK LIBRARY</h1>
                 </div>
                 <div class="col">
-                    <a href="<?php echo base_url()?>application/views/login.php"><button>Login</button></a>
-                    <a href="<?php echo base_url()?>application/views/login.php"><button>SignUp</button></a>
+                    <a href="<?php echo base_url()?>index.php/home/login"><button>Login</button></a>
+                    <a href="<?php echo base_url()?>index.php/home/registration_page"><button>SignUp</button></a>
                 </div>
             </div>
             <div class="row">
                 <p>With bookmark library you can store your favorite links online on your private and customizable bookmarks page.
                     All your bookmarks can be organized into categories and dashboards.</p>                         
-            </div>
-            <div class ="row">
-                <form action="bm_submit.php" method="POST">
-                    Enter URL:<input type="text" name="">
-                    <input type="submit" name="" value="submit">
-                </form>
             </div>
         </div>
     </body>
