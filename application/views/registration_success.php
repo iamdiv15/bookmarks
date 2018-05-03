@@ -35,7 +35,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             }
             b{
                 float:right;
-                color:green;
+                color:orange;
             }
            
         </style>
@@ -50,9 +50,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <h1>BOOKMARK LIBRARY</h1>
                 </div>
                 <div class="col">
-                    <b>HI <?php 
+                    <b> HI  <?php 
                             $r=$this-> register_submit->insert_into_db();
-                            print_r($r);
+                            print_r( $r);
                         ?>
                     </b>
                 </div>

@@ -31,13 +31,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <form action="<?php echo base_url();?>index.php/home/insert_into_db" method="POST">
                         <br><br>
                         <label><b>USER NAME:</b></label>
-                        <input class="form-control" type ="text" name="username" placeholder="Enetr username"/>
+                        <input class="form-control" type ="text" name="username" placeholder="Enetr username" required=""/>
                         <br/>
                         <label><b>EMAIL:</b></label>
-                        <input class="form-control" type ="email" name="email" placeholder="Enter email"/>
+                        <input class="form-control" type ="email" name="email" placeholder="Enter email" required=""/>
                         <br>
                         <label><b>PASSWORD:</b></label>
-                        <input class ="form-control" type="password" name="password" placeholder="Enter password"/>
+                        <input class ="form-control" type="password" name="password" placeholder="Enter password" required=""/>
                         <br/>
                         <button class="btn btn-success " type="reset">Reset</button>
                         <button class="btn btn-success " type="submit">Submit</button>

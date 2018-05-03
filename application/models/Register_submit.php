@@ -11,14 +11,8 @@ class Register_submit extends CI_Model{
         $username = $_POST['username'];
         $email = $_POST['email'];
         $password = $_POST['password'];
-        $a='Wrong input';
-        if($username=="" || $email=="" || $password==""){
-            return $a;
-        }
-        else {
-            $this->db->query("INSERT INTO users(username,email,password) VALUES('$username','$email','$password')");
-            return $username;
-        }
+        $this->db->query("INSERT INTO users(username,email,password) VALUES('$username','$email','$password')");
+        return $username;
         
     }
 }
