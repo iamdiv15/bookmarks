@@ -28,7 +28,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="col-md-6 col-sm-6">
                     <br><br>
                     <h1> Registration form </h1>
-                    <form action="register_submit.php" method="POST">
+                    <form action="<?php echo base_url();?>index.php/home/insert_into_db" method="POST">
                         <br><br>
                         <label><b>USER NAME:</b></label>
                         <input class="form-control" type ="text" name="username" placeholder="Enetr username"/>

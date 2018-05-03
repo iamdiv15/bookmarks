@@ -4,22 +4,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Home extends CI_Controller {
     
-     public function bookmarks()
-      {
+    public function bookmarks(){
         $this->load->view("bookmarks");
-        
-      }
-     public function login()
-      {
+    }
+    
+    public function login(){
         $this->load->view("login");
-        /*$this->load->model('bookmark_model');
-            $r = $this->test_model->match();
-            print_r($r);*/
-      }
-     public function registration_page()
-      {
+    }
+    
+    public function registration_page(){
         $this->load->view("registration_page");
-      }
+    }
+    
+    public function insert_into_db(){
+        $this-> load-> model('register_submit');
+        $r=$this-> register_submit->insert_into_db();
+        $this-> load-> view("registration_success");
+    }
     
 }
 ?>

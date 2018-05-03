@@ -33,6 +33,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 margin-top: 30px;
                 margin-right:4px;
             }
+            b{
+                float:right;
+                color:green;
+            }
            
         </style>
     </head>
@@ -46,13 +50,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <h1>BOOKMARK LIBRARY</h1>
                 </div>
                 <div class="col">
-                    <a href="<?php echo base_url()?>index.php/home/login"><button class="btn btn-success ">Login</button></a>
-                    <a href="<?php echo base_url()?>index.php/home/registration_page"><button class="btn btn-success ">SignUp</button></a>
+                    <b>HI <?php 
+                            $r=$this-> register_submit->insert_into_db();
+                            print_r($r);
+                        ?>
+                    </b>
                 </div>
             </div>
             <div class="row">
                 <p>With bookmark library you can store your favorite links online on your private and customizable bookmarks page.
                     All your bookmarks can be organized into categories and dashboards.</p>                         
+            </div>
+            <div class ="row">
+                <form action="bm_submit.php" method="POST">
+                    Enter URL:<input type="text" name="">
+                    <input type="submit" name="" value="submit">
+                </form>
             </div>
         </div>
     </body>
