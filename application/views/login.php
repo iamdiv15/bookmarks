@@ -15,9 +15,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 padding: 60px 40px;
                 margin-top: 70px;
             }
-            img{
-                width:100px;
+            .img{
+                width:130px;
                 margin:auto;
+                border-radius:50%;
+                position:relative;
+                display: block;
             }
             h1{
                 color: white;
@@ -29,6 +32,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 color: white;
                 font-size: 20px;
             }
+            .frgt{
+                color:red;
+                font-size:20px;
+            }
                 
         </style>
     </head>
@@ -39,18 +46,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="col-md-6 col-sm-8 col-xs-12">
                     <form id="log" action="login_submit.php" method="POST">
                         <h1>Login Form</h1>
-                        <img src="<?php echo base_url()?>static/img/caller.png"/>
+                        <img class="img img-thumbnail" src="<?php echo base_url()?>static/img/img_avatar.png"/>
                         <div>
                             <label>Email:</label>
-                            <input class="form-control" type="text" name="Email" placeholder="abc@example.com"/><br/>
+                            <input class="form-control" type="text" name="Email" placeholder="abc@example.com" required=""/><br/>
                         <div/>
                         <div>
                             <label>Password:</label>
-                            <input class="form-control" type="password" name="psw" placeholder="password"/><br/>
+                            <input class="form-control" type="password" name="psw" placeholder="password" required=""/><br/>
                         </div>
                         <div>
                             <label><input type="checkbox"/>Remember me</label>
                         <button class="btn btn-success form-control" type="submit">Login</button>
+                        <a class="frgt" href="www.google.com">Forget Password</a>
                     </form>
                 </div>
                 <div class="col-md-3 col-sm-2 col-xs-12"></div>
