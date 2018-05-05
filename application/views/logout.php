@@ -4,6 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="icon" type="image/gif/png" href="<?php echo base_url()?>static/img/bkmk-logo.png">
         <title>Bookmark Store</title>
         <link rel="stylesheet" href="<?php echo base_url()?>static/css/bootstrap.css" type="text/css"/>
         <style type="text/css">
@@ -28,15 +29,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             .row p{
                 margin-left: 15px;
             }
-            a{
-                float:right;
-                margin-top: 30px;
-                margin-right:4px;
-            }
+            
             b{
                 float:right;
                 color:orange;
             }
+            a{
+                float:right;
+                margin: 10px;
+            }
+           
+            
            
         </style>
     </head>
@@ -50,13 +53,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <h1>BOOKMARK LIBRARY</h1>
                 </div>
                 <div class="col">
-                    <b> HI  <?php 
-                            $r=$this-> register_submit->insert_into_db();
-                            print_r( $r);
-                        ?>
+                    <b>
+                        Welcome User
                     </b>
+                    <a href="<?php echo base_url()?>index.php/home/bookmarks"><button class="btn btn-success ">signout</button></a>       
                 </div>
-            </div>
+            </div>  
             <div class="row">
                 <p>With bookmark library you can store your favorite links online on your private and customizable bookmarks page.
                     All your bookmarks can be organized into categories and dashboards.</p>                         

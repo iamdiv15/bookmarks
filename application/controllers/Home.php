@@ -18,8 +18,14 @@ class Home extends CI_Controller {
     
     public function insert_into_db(){
         $this-> load-> model('register_submit');
-        $r=$this-> register_submit->insert_into_db();
-        $this-> load-> view("registration_success");
+        $this-> register_submit->insert_into_db();
+        $this-> load-> view("logout");
+    }
+    public function check_into_db(){
+        $this-> load-> model('login_submit');
+        $this-> login_submit->check_into_db();
+        $this-> load-> view("logout");
+        
     }
     
 }

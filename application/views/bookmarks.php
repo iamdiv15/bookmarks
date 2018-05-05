@@ -4,7 +4,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Bookmark Store</title>
+        <link rel="icon" type="image/gif/png" href="<?php echo base_url()?>static/img/bkmk-logo.png">
+
+        <title> Bookmark Store</title>
         <link rel="stylesheet" href="<?php echo base_url()?>static/css/bootstrap.css" type="text/css"/>
         <style type="text/css">
             body{
