@@ -11,21 +11,22 @@ class Home extends CI_Controller {
     public function login(){
         $this->load->view("login");
     }
-    
-    public function registration_page(){
-        $this->load->view("registration_page");
-    }
-    
-    public function insert_into_db(){
-        $this-> load-> model('register_submit');
-        $this-> register_submit->insert_into_db();
-        $this-> load-> view("logout");
-    }
-    public function check_into_db(){
-        $this-> load-> model('login_submit');
-        $this-> login_submit->check_into_db();
-        $this-> load-> view("logout");
+    public function login_submit(){
+        $this->load->model('user');
+        $this->user->check_into_db();
+        $this->load->view("logout");
         
+    }
+    
+    public function registration(){
+        $this->load->view("registration");
+    }
+    
+    public function register_submit(){
+        $this->load->model('user');
+        $r=$this->user->insert_into_db();
+        $data['x'] = $r;
+        $this->load->view("logout",$data);
     }
     
 }

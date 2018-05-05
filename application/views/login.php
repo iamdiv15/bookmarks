@@ -4,12 +4,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="icon" type="image/gif/png" href="<?php echo base_url()?>static/img/bkmk-logo.png">
+        <link rel="icon" type="image/gif/png" href="/static/img/bkmk-logo.png">
         <title>Login Form</title>
-        <link rel="stylesheet" href="<?php echo base_url()?>static/css/bootstrap.css" type="text/css"/>
+        <link rel="stylesheet" href="/static/css/bootstrap.css" type="text/css"/>
         <style type="text/css">
             body{
-                background: url('<?php echo base_url()?>static/img/apple.jpg');
+                background: url('/static/img/apple.jpg');
             }
             #log{
                 border: 1px solid white;
@@ -45,9 +45,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="row">
                 <div class="col-md-3 col-sm-2 col-xs-12"></div>
                 <div class="col-md-6 col-sm-8 col-xs-12">
-                    <form id="log" action="<?php echo base_url()?>index.php/home/check_into_db" method="POST">
+                    <form id="log" action="/home/login_submit" method="POST">
                         <h1>Login Form</h1>
-                        <img class="img img-thumbnail" src="<?php echo base_url()?>static/img/img_avatar.png"/>
+                        <img class="img img-thumbnail" src="/static/img/img_avatar.png"/>
                         <div>
                             <label>Email:</label>
                             <input class="form-control" type="text" name="email" placeholder="abc@example.com" required=""/><br/>

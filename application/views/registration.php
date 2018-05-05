@@ -3,14 +3,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 <html>
     <head>
-        <link rel="icon" type="image/gif/png" href="<?php echo base_url()?>static/img/bkmk-logo.png">
+        <link rel="icon" type="image/gif/png" href="/static/img/bkmk-logo.png">
         <title>
             FILL Form
         </title>
-        <link rel="stylesheet" href="<?php echo base_url()?>static/css/bootstrap.css" type="text/css"/>
+        <link rel="stylesheet" href="/static/css/bootstrap.css" type="text/css"/>
         <style>
             body{
-                background:url('<?php echo base_url()?>static/img/rpg2.jpg') no-repeat;
+                background:url('/static/img/rpg2.jpg') no-repeat;
             }
             label {
                 color:#0086b3;
@@ -29,7 +29,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="col-md-6 col-sm-6">
                     <br><br>
                     <h1> Registration form </h1>
-                    <form action="<?php echo base_url();?>index.php/home/insert_into_db" method="POST">
+                    <form action="/home/register_submit" method="POST">
                         <br><br>
                         <label><b>USER NAME:</b></label>
                         <input class="form-control" type ="text" name="username" placeholder="Enter username" required=""/>
