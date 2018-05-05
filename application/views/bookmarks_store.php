@@ -1,5 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -47,8 +48,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <h1>BOOKMARK LIBRARY</h1>
                 </div>
                 <div class="col">
-                    <a href="<?php echo base_url()?>index.php/home/login"><button class="btn btn-success ">Login</button></a>
-                    <a href="<?php echo base_url()?>index.php/home/registration_page"><button class="btn btn-success ">SignUp</button></a>
+                             <a href="<?php echo base_url()?>index.php/home/bookmarks_home.php"><button class="btn btn-success ">Log Out</button></a> 
                 </div>
             </div>
             <div class="row">
@@ -56,10 +56,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     All your bookmarks can be organized into categories and dashboards.</p>                         
             </div>
             <div class ="row">
-                <form action="bm_submit.php" method="POST">
-                    Enter URL:<input type="text" name="">
-                    <input type="submit" name="" value="submit">
-                </form>
+                <h1>Display bookmarks</h1>
+                <?php
+                
+                include('database.php');
+                
+                $getdata="SELECT id, bookmarks FROM store_bookmarks";
+                $sqldata=mysqli_query($db, $getdata);
+                echo "<table>";
+                echo "<tr><th>ID</th><th>bookmarks</th></tr>";
+                
+                while($row = mysqli_fetch_array($sqldata, MYSQLI_ASSOC)){
+                    echo "<tr><td>";
+                    echo $row['id'];
+                    echo "</td><td>";
+                    echo $row['bookmarks'];
+                    echo "</td></tr>";
+                }
+                echo "</table>";
+                ?>
             </div>
         </div>
     </body>

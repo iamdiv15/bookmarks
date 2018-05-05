@@ -38,6 +38,8 @@ class Welcome extends CI_Controller {
                    
         }
 
-    
-            
+    /* public function bookmarks()
+      {
+      $this->load->view("bookmarks");
+      } */
 }
