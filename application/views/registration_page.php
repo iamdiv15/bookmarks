@@ -3,6 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 <html>
     <head>
+        <link rel="icon" type="image/gif/png" href="<?php echo base_url()?>static/img/bkmk-logo.png">
         <title>
             FILL Form
         </title>
@@ -31,7 +32,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <form action="<?php echo base_url();?>index.php/home/insert_into_db" method="POST">
                         <br><br>
                         <label><b>USER NAME:</b></label>
-                        <input class="form-control" type ="text" name="username" placeholder="Enetr username" required=""/>
+                        <input class="form-control" type ="text" name="username" placeholder="Enter username" required=""/>
                         <br/>
                         <label><b>EMAIL:</b></label>
                         <input class="form-control" type ="email" name="email" placeholder="Enter email" required=""/>
