@@ -6,8 +6,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html>
     <head>
         <title>Bookmark Store</title>
-        <link rel="stylesheet" href="<?php echo base_url()?>static/css/bootstrap.css" type="text/css"/>
-        <style type="text/css">
+        <link rel ="stylesheet" href ="<?php echo base_url()?>static/css/bootstrap.css" type="text/css"/>
+        <style type= "text/css">
             body{
                 background: url('<?php echo base_url()?>static/img/home_bg.jpg') no-repeat;
             }
