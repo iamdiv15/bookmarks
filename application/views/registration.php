@@ -8,6 +8,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             FILL Form
         </title>
         <link rel="stylesheet" href="/static/css/bootstrap.css" type="text/css"/>
+        <script type="text/javascript" src="/static/js/jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="/static/js/jquery.validate.js"></script>
+        <script type="text/javascript" src="/static/js/newjs.js"></script>
         <style>
             body{
                 background:url('/static/img/rpg2.jpg') no-repeat;
